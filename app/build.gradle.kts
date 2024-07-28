@@ -61,6 +61,16 @@ dependencies {
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
     testImplementation(libs.junit)
+
+    //service
+    implementation(libs.okHttp)
+    implementation(libs.okHttpLogging)
+    implementation(libs.retrofit)
+    implementation(libs.kotlin.serialization)
+    implementation(libs.kotlin.serialization.converter)
+    implementation(libs.coroutines.android)
+
+    //test
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(platform(libs.compose.bom))
