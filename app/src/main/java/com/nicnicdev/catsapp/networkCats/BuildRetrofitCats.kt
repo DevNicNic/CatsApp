@@ -17,7 +17,7 @@ object BuildRetrofit {
     private val contentType = "application/json".toMediaType()
     private const val BASE_URL = "https://api.thecatapi.com/v1/"
 
-    operator fun invoke(): Retrofit =
+    fun build(): Retrofit =
         Retrofit.Builder()
             .baseUrl(BASE_URL)
             .client(provideOkHttpClient())
