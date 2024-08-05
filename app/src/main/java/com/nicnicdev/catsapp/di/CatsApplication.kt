@@ -18,6 +18,8 @@ class CatsApplication : Application() {
 
             modules(
                 networkModule,
+                dataModule,
+                viewModelModule,
             )
         }
     }
